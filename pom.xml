@@ -12,7 +12,7 @@
 	<artifactId>crud</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>crud</name>
-	<description></description>
+	<description>teste</description>
 	<properties>
 		<java.version>18</java.version>
 	</properties>
