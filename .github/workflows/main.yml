@@ -1,18 +1,12 @@
-name: TesteActions
-on: 
-  workflow_dispatch:
-  
-jobs:
-  build:
-    run-os: ubuntu-lastest
-    steps:
-      - name: Run script
-        run: echo hello world
-          
-  deploy-dev:
-    run-os: ubuntu-lastest
-    environment:
-      name: dev
-      url: 'www.google.com.br'
-  
+on:
+  pull_request_target:
+    types:
+      - closed
 
+jobs:
+  if_merged:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo The PR was merged
