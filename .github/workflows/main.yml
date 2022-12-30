@@ -1,0 +1,18 @@
+name: TesteActions
+on: 
+  workflow_dispatch:
+  
+jobs:
+  build:
+    run-os: ubuntu-lastest
+    steps:
+      - name: Run script
+        run: echo hello world
+          
+  deploy-dev:
+    run-os: ubuntu-lastest
+    environment:
+      name: dev
+      url: 'www.google.com.br'
+  
+
