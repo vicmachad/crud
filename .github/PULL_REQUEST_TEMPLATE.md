@@ -1,2 +1,2 @@
-[] primeir
+[] primeiro
 [] segundo
